@@ -12,7 +12,7 @@ public abstract class Tiket {
         this.kodeBooking = kodeBooking;
         this.namaPenumpang = namaPenumpang;
         this.rute = rute;
-        this.setHargaDasar(hargaDasar); // Menggunakan setter untuk validasi
+        this.setHargaDasar(hargaDasar);
 
         totalTiketDibuat++;
     }
@@ -51,5 +51,9 @@ public abstract class Tiket {
         }
     }
 
+    // Method abstract bawaan
     public abstract void tampilkanInfoTiket();
+    
+    // TAMBAHAN MODUL 7: Method abstract baru yang wajib di-override subclass
+    public abstract void prosesBoarding();
 }
