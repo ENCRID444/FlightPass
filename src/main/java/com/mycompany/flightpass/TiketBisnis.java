@@ -8,7 +8,7 @@ public class TiketBisnis extends Tiket implements DapatDiRefund, DapatFasilitasV
         super(kodeBooking, namaPenumpang, rute, hargaDasar);
         this.isAksesLounge = aksesLounge;
     }
-
+    
     @Override
     public void tampilkanInfoTiket() {
         String lounge = isAksesLounge ? "Ya" : "Tidak";
